@@ -1,0 +1,66 @@
+
+#br-site-header, #br-ite-footer {background-color: $off-white}
+
+.header_primary_white {color: $off-white; }
+
+h1, .header_primary_dark {color: $primary-dark; }
+
+h2, h5, .header_primary_default {color: $primary-color; }
+
+h3, h7, .header_secondary_default {color: $second-color; }
+
+h4, h6, .header_analogous_default {color: $analogous-color; }
+
+h8 {color: $analogous-color-light}
+
+.header_analogous_light {color: $analogous-color-light }
+
+.black-txt {color: $black;}
+
+.white-txt, .primary-menu li a {color: $white;}
+
+
+// background and borders
+
+.primary-bg-color {background-color: $primary-color }
+
+.primary-dark-bg-color {background-color: $primary-dark }
+
+.secondary-bg-color {background-color: $second-color}
+
+.off-white-bg-color {background-color: $off-white}
+
+.black-bg-color {background-color: $black}
+
+.analogous-bg-color {background-color: $analogous-color}
+
+.new-gray-bg-color {background-color: $neutral-gray}
+
+.analogous_light-bg-color {background-color: $analogous-color-light}
+
+#site-content ul {
+  list-style: none;
+}
+
+#site-content ul li::before {
+  content: "\2022";
+  color: $analogous-color;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: 1em;
+}
+
+.entry-title {color: $off-white }
+
+.toggle-inner, .toggle-inner span {color: $primary-color}
+
+#br-menu .menu-item a {text-shadow: .125px .125px $primary-dark; color: $primary-color}
+
+#br-site-header #site-header .header-titles-wrapper div {color: $analogous-color; font-size: 1.5em}
+
+.social-menu li a {color: $off-white; background-color: $second-color}
+
+.ancestor-wrapper a, .menu-top .toggle, .social-menu li .customize-unpreviewable {color: $off-white}
+
+// you can make more text colors and backgrounds for use below using the colors in the color-variables.scss file

@@ -1,0 +1,51 @@
+/*
+Theme Name: Bromine
+Theme URI: https://fenwaytrilogymedia.com/
+Description: Based on WordPress 2020
+Author: Brian Rabuffetti
+Author url: fenwaytrilogymedia.com
+Version: 1.375
+Tags: Tags: word-press-child, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, theme-options,  block-styles, wide-blocks, accessibility-ready
+Template: twentytwenty
+*/
+
+/* import css and Google font Ubunto (Anything is Possible) 
+
+This is the old way to impiort. Now done with Enqueue stylesheet @import url('../twentytwenty/style.css');
+
+*/
+
+@import url('../../plugins/br-testimonilas/css/br-plugin.css'); /*maybe create a new folder withing the tehem and just ../ instead of two */
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+/* non mobile class and general css*/
+
+.header-toggles {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+ .header-toggles {
+    display: block;
+  }
+}
+
+/* additional style */
+
+
+#br-menu .menu-item a {font-size: 1.25em; font-weight: bold; text-transform: uppercase;}	
+
+.singular .entry-header {padding: 3rem}
+
+p, span, li {font-family: ubuntu}
+
+.footer-credits p {font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;}
+
+.entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
+    max-width: 116rem;
+}
+
+
+
+/* plugin class selectors */

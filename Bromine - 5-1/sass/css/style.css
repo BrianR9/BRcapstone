@@ -1,0 +1,240 @@
+@charset "UTF-8";
+#site-header, #site-footer {
+  background-color: white;
+}
+
+footer {
+  background-color: white;
+}
+
+/* mobile first */
+/* new nav bar display starting as grid and moving to flex at larger size*/
+html {
+  box-sizing: border-box;
+  background-color: white;
+}
+
+/* begin a flex base layout not Grid just yet */
+.grid {
+  --margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+/* flex - grabbing all boxes classes to break out layout and add optional style*/
+[class*=box-parent-] {
+  display: grid;
+  grid-gap: var(--step0);
+  background-color: white;
+  border: calc(var(--m3scale) * 1px);
+  padding: calc(var(--m3scale) * 5px);
+  grid-template-columns: 1fr;
+}
+
+.box-style {
+  background-color: white;
+  box-shadow: calc(var(--m3scale) * 2px) calc(var(--m3scale) * 2px) #333333;
+  border: calc(var(--m3scale) * 1px) solid #333333;
+}
+
+/*  GRID usage: cards aka boxes taken from assignment 1 and boxshadow idea from previous DGMD class */
+.box-parent-three {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.box-parent-three-one {
+  grid-template-columns: 3fr 1fr;
+}
+
+.box-parent-one-three {
+  grid-template-columns: 1fr 3fr;
+}
+
+.box-parent-two {
+  grid-template-columns: 1fr 1fr;
+}
+
+.box-parent-one {
+  grid-template-columns: 1fr;
+}
+
+#br-site-header, #br-ite-footer {
+  background-color: #f2f5f7;
+}
+
+.header_primary_white {
+  color: #f2f5f7;
+}
+
+h1, .header_primary_dark {
+  color: #3d6985;
+}
+
+h2, h5, .header_primary_default {
+  color: #4f93bf;
+}
+
+h3, h7, .header_secondary_default {
+  color: #ee7320;
+}
+
+h4, h6, .header_analogous_default {
+  color: #d73761;
+}
+
+h8 {
+  color: #e47793;
+}
+
+.header_analogous_light {
+  color: #e47793;
+}
+
+.black-txt {
+  color: #333333;
+}
+
+.white-txt, .primary-menu li a {
+  color: white;
+}
+
+.serif {
+  font-family: sans-serif;
+}
+
+.san-serif {
+  font-family: serif;
+}
+
+.primary-bg-color {
+  background-color: #4f93bf;
+}
+
+.primary-dark-bg-color {
+  background-color: #3d6985;
+}
+
+.secondary-bg-color {
+  background-color: #ee7320;
+}
+
+.off-white-bg-color {
+  background-color: #f2f5f7;
+}
+
+.black-bg-color {
+  background-color: #333333;
+}
+
+.analogous-bg-color {
+  background-color: #d73761;
+}
+
+.new-gray-bg-color {
+  background-color: #878787;
+}
+
+.analogous_light-bg-color {
+  background-color: #e47793;
+}
+
+#site-content ul {
+  list-style: none;
+}
+
+#site-content ul li::before {
+  content: "•";
+  color: #d73761;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: 1em;
+}
+
+.entry-title {
+  color: #f2f5f7;
+}
+
+.toggle-inner, .toggle-inner span {
+  color: #4f93bf;
+}
+
+#br-menu .menu-item a {
+  text-shadow: 0.125px 0.125px #3d6985;
+  color: #4f93bf;
+}
+
+#br-site-header #site-header .header-titles-wrapper div {
+  color: #d73761;
+  font-size: 1.5em;
+}
+
+.social-menu li a {
+  color: #f2f5f7;
+  background-color: #ee7320;
+}
+
+.ancestor-wrapper a, .menu-top .toggle, .social-menu li .customize-unpreviewable {
+  color: #f2f5f7;
+}
+
+.testimonial-box {
+  border: 1.25px solid #333333;
+  background-color: #f2f5f7;
+  box-shadow: 4px #ae8060;
+  background-color: #f2f5f7;
+}
+
+.testimonial-box:nth-child(odd) {
+  background: #4f93bf;
+  color: #f2f5f7;
+}
+
+.testimonial-box:nth-child(even) {
+  background: #d77837;
+  color: #f2f5f7;
+}
+
+.slideshow-container {
+  background-color: #4f93bf;
+}
+
+.author {
+  font-style: italic;
+  color: white;
+  font-size: 1.7em;
+}
+
+.mySlides {
+  font-weight: bold;
+  color: white;
+  margin: 1.25em;
+}
+
+.mySlides:hover {
+  transform: scale(1.2);
+}
+
+.slideshow-container a {
+  font-size: 1.5em;
+  background-color: #bbbbbb;
+  border-radius: 75%;
+}
+
+.slideshow-container a:hover {
+  background-color: #252565;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+.prev, .next {
+  color: white;
+}
+
+.dot-container {
+  background-color: white;
+}

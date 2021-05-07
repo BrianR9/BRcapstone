@@ -1,0 +1,43 @@
+/* mobile first */
+  /* new nav bar display starting as grid and moving to flex at larger size*/
+
+html {box-sizing: border-box; background-color: $white; }
+
+  /* begin a flex base layout not Grid just yet */ 
+
+.grid {
+  --margin: 0;
+   display: flex;
+  flex-flow: row wrap;
+}
+
+/* flex - grabbing all boxes classes to break out layout and add optional style*/
+
+    [class*="box-parent-"] {
+    @include box-container;
+    grid-template-columns:  1fr;
+  }
+
+  .box-style {@include box-style;}
+
+/*  GRID usage: cards aka boxes taken from assignment 1 and boxshadow idea from previous DGMD class */
+
+          .box-parent-three {
+            grid-template-columns:  1fr 1fr 1fr; 
+          }
+
+          .box-parent-three-one {
+            grid-template-columns:  3fr  1fr; 
+          }
+
+          .box-parent-one-three {
+            grid-template-columns:  1fr  3fr; 
+          }
+
+          .box-parent-two {
+            grid-template-columns:  1fr  1fr; 
+          }
+
+          .box-parent-one {
+            grid-template-columns:  1fr; 
+          }

@@ -1,0 +1,18 @@
+// I got this idea for this file from using UK Kit and Takkys color picker in her file
+// pick your color and starting point for the scale. Color is now hsl(240, 93%, 42%) 
+
+$my-theme-color:  hsl(204, 86%, 53%); // make this work
+
+// some key theme css
+
+#site-header, #site-footer {background-color: white}
+
+footer {background-color: white}
+
+// partial files importing
+
+@import "color-variables";
+@import "variables-mixins";
+@import "layout";
+@import "text-and-bg-color";
+@import "plugins";

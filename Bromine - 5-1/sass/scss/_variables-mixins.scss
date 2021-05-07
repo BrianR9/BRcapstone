@@ -1,0 +1,17 @@
+
+
+// mixins as done previously in class adding in scaled variables
+
+@mixin std-bg-color-text {color: white; background-color: $primary-color;}
+
+@mixin box-container { display: grid;
+  grid-gap: $small-size;
+  background-color: white;
+  border: $atom-size;
+  padding: $five-atoms}
+
+@mixin box-style {
+  background-color: $white;
+  box-shadow: $two-atoms $two-atoms $black;
+  border: $atom-size solid $black}
+
